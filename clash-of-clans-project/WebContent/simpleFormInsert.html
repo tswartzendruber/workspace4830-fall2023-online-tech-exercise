@@ -1,0 +1,88 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Luckiest+Guy&display=swap" rel="stylesheet">
+<style>
+body {
+	font-family: 'Bricolage Grotesque', sans-serif;
+	font-family: 'Luckiest Guy', cursive;
+}
+header {
+    background: linear-gradient(270deg, black, rgb(151, 56, 14), rgb(151, 56, 14), rgb(151, 56, 14), black);
+    color:white;
+    text-align:center;
+    padding:5px;
+    font-size: 20pt;
+}
+nav {
+	margin-top: 5px;
+    line-height:30px;
+    background-color:#eeeeee;
+    height:77vh;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+.input {
+	width: 500px;
+	margin-bottom: 10px;
+}
+h2 {
+	font-size: 30pt;
+	width: 50vw;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.button {
+	margin-top: 18px;
+	margin-bottom: 0px;
+	margin-left: 170px;
+	width: 150px;
+	height: 50px;
+	border-radius: 8px;
+}
+.image {
+	width: 400px;
+	height: 400px;
+	margin-left: 360px;
+	margin-top: 80px;
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1> MY CLASH OF CLANS DATABASE </h1>
+</header>
+
+<nav>
+<a href="/clash-of-clans-project/simpleFormSearch.html">Search Data</a> <br>
+</nav>
+
+<section>
+	<h2>Create your own Troop!</h2>
+	
+	<form action="SimpleFormInsert" method="POST">
+	
+		Troop Name: <input type="text" name="name" class="input"> <br />
+		Damage Per Second: <input type="text" name="damage_per_second" class="input"> <br />
+		Health: <input type="text" name="health" class="input"> <br />
+		Training Time: <input type="text" name="training_time" class="input"> <br />
+		Ground Targets?: <input type="text" name="ground_targets" class="input"> <br />
+		Air Targets?: <input type="text" name="air_targets" class="input"> <br />
+		Housing Space: <input type="text" name="housing_space" class="input"> <br />
+		Speed: <input type="text" name="speed" class="input"> <br />
+		
+		<input type="submit" value="Submit", class="button" />
+	</form>
+
+</section>
+<img src="barbarian.webp" alt="Barbarian Image" class="image">
+</body>
+</html>
